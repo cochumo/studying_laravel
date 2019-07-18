@@ -12,26 +12,13 @@ class HelloController extends Controller
 {
 
   public function index(Request $request) {
-    // $validator = Validator::make($request->query(),
-    // [
-    //   'id' => 'required',
-    //   'pass' => 'required',
-    // ]);
-    // if ($validator->fails()) {
-    //   $msg = 'クエリに問題があります。';
-    // } else {
-    //   $msg = 'ID/PASSを受け付けました。フォームを入力してください。';
-    // }
 
-    // if ($request->hasCookie('msg'))
-    // {
-    //     $msg = 'Cookie:' . $request->cookie('msg');
-    // } else {
-    //     $msg = '※Cookieはありまへん';
-    // }
+    // $items = DB::select('select * from people');
+    // return view('hello.index',['items'=>$items]);
 
-    $items = DB::select('select * from people');
-    return view('hello.index',['items'=>$items]);
+    if (isset($request->id)) {
+      
+    }
   }
 
   public function post(Request $request) {

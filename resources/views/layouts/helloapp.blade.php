@@ -40,7 +40,7 @@
       }
       th {
         background-color: #999;
-        color: fff;
+        color: #fff;
         padding: 5px 10px;
       }
       td {
